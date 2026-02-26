@@ -730,6 +730,9 @@
     if ([url isFileURL]) {
         return YES;
     }
+    if ([url.scheme isEqualToString:@"ionic"]) {
+          return YES;
+    }
 
     return NO;
 }
